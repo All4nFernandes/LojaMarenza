@@ -10,56 +10,40 @@ const carousel = document.querySelector(".carousel-images");
 const images = document.querySelectorAll(".carousel-image");
 const total = images.length;
 
-// --- Buttons ---
-document.querySelector(".carousel-next").addEventListener("click", nextImage);
-document.querySelector(".carousel-prev").addEventListener("click", prevImage);
-
-function showImage(i) {
-  carousel.style.transform = `translateX(-${i * 100}%)`;
+function update() {
+  carousel.style.transform = `translateX(-${index * 100}%)`;
 }
 
-// --- Lógica de clique ---
-function nextImage() {
+document.querySelector(".carousel-next").addEventListener("click", () => {
   index = (index + 1) % total;
-  showImage(index);
-}
+  update();
+});
 
-function prevImage() {
+document.querySelector(".carousel-prev").addEventListener("click", () => {
   index = (index - 1 + total) % total;
-  showImage(index);
-}
+  update();
+});
 
-// --- Lógica de toque (MOBILE) ---
+// Suporte a toque
 let startX = 0;
-let moveX = 0;
+let endX = 0;
 
-// Quando começa o toque
 carousel.addEventListener("touchstart", (e) => {
   startX = e.touches[0].clientX;
 });
 
-// Quando arrasta o dedo
 carousel.addEventListener("touchmove", (e) => {
-  moveX = e.touches[0].clientX;
+  endX = e.touches[0].clientX;
 });
 
-// Quando solta o dedo
 carousel.addEventListener("touchend", () => {
-  let diff = startX - moveX;
+  let diff = startX - endX;
 
-  // Arrastou para a esquerda → próxima imagem
-  if (diff > 50) {
-    nextImage();
-  }
-  // Arrastou para a direita → imagem anterior
-  else if (diff < -50) {
-    prevImage();
-  }
+  if (diff > 50) index = (index + 1) % total;
+  if (diff < -50) index = (index - 1 + total) % total;
 
-  // reseta variáveis
-  startX = 0;
-  moveX = 0;
+  update();
 });
 
-// Auto play (opcional)
+// Auto play
 setInterval(nextImage, 7000);
