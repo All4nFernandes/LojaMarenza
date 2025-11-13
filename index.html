@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marenza - Joias em Pratas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+      <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-2">
+        <img src="image/Marenza.jpg" alt="Marenza" class="h-10">
+        <span class="text-2xl font-bold text-gray-800">Marenza</span>
+      </a>
+
+      <!-- Links de navegação -->
+      <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+        <a href="#" class="nav-link">Início</a>
+        <a href="produtos.html" class="nav-link">Produtos</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Botões -->
+      <div class="flex items-center space-x-4">
+        <a href="#" class="hidden md:inline-block btn-login">Entrar</a>
+        
+        <!-- Ícone do carrinho -->
+        <button class="relative cart-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800 hover:text-gray-600 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.35 5.4a1 1 0 001 .6h12.7a1 1 0 001-.76L21 13M9 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
+          </svg>
+        </button>
+
+        <!-- Menu mobile -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <a href="#" class="mobile-link">Início</a>
+      <a href="#produtos" class="mobile-link">Produtos</a>
+      <a href="#sobre" class="mobile-link">Sobre</a>
+      <a href="#contato" class="mobile-link">Contato</a>
+      <a href="#" class="mobile-login">Entrar</a>
+    </nav>
+  </header>
+    <main>
+        <section id="hero" class="relative bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+                <!-- Texto -->
+                <div class="space-y-6">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                        Beleza que <span class="text-gray-700">reflete quem você é.</span>
+                    </h1>
+                    <p class="text-gray-600 text-lg">
+                        Descubra a elegância das joias em prata da Marenza — peças únicas para cada momento da sua vida.
+                    </p>
+
+                    <div class="space-x-4">
+                        <a href="#produtos" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition">
+                            Ver Coleção
+                        </a>
+                        <a href="#sobre" class="inline-block border border-gray-800 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+                            Sobre Nós
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Imagem -->
+                <div class="flex justify-center">
+                    <img src="image/joia.jpg" alt="Joias Marenza" class="rounded-2xl shadow-xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+    <section id="carrossel" class="py-10 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="carousel relative overflow-hidden rounded-2xl shadow-lg">
+
+            <div class="carousel-images flex transition-transform duration-700 ease-in-out">
+                <img src="image/1000188195.jpg" alt="Joia Marenza 1" class="carousel-image">
+                <img src="image/1000188196.jpg" alt="Joia Marenza 2" class="carousel-image">
+                <img src="image/1000188197.jpg" alt="Joia Marenza 3" class="carousel-image">
+                <img src="image/1000188198.jpg" alt="Joia Marenza 3" class="carousel-image">
+            </div>
+
+            <!-- Botões -->
+            <button class="carousel-prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow">
+                &#10094;
+            </button>
+            <button class="carousel-next absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow">
+                &#10095;
+            </button>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Imagem da loja -->
+      <div class="flex justify-center">
+        <img src="images/sobre-loja.jpg" alt="Loja Marenza" class="rounded-2xl shadow-lg w-full max-w-md">
+      </div>
+
+      <!-- Texto -->
+      <div>
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Sobre a Marenza</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          A <strong>Marenza</strong> nasceu com o propósito de trazer elegância, estilo e autenticidade para o seu dia a dia.
+          Somos uma loja especializada em <strong>jóias de prata</strong> de alta qualidade, cuidadosamente selecionadas
+          para refletir sua personalidade e destacar cada detalhe do seu visual.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          Nosso compromisso é com a beleza e a durabilidade — cada peça Marenza é criada para brilhar por muito tempo.
+          Trabalhamos com fornecedores confiáveis e designs exclusivos que unem sofisticação e acessibilidade.
+        </p>
+
+        <a href="#produtos" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition">
+          Conheça Nossa Coleção
+        </a>
+      </div>
+    </div>
+  </section>
+    </main>
+</body>
+<footer class="bg-gray-900 text-gray-300 mt-20">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-10">
+
+      <!-- Logo e descrição -->
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <img src="image/Marenza.jpg" alt="Marenza" class="h-10">
+          <span class="text-2xl font-bold text-white">Marenza</span>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed">
+            Elegância, autenticidade e durabilidade em cada detalhe.
+        Joias em prata feitas para brilhar com você.  
+        </p>
+      </div>
+
+      <!-- Links úteis -->
+      <div class="grid grid-cols-2 gap-6 md:gap-10">
+        <div>
+          <h3 class="text-white font-semibold mb-3">Navegação</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="footer-link">Início</a></li>
+            <li><a href="#produtos" class="footer-link">Produtos</a></li>
+            <li><a href="#sobre" class="footer-link">Sobre</a></li>
+            <li><a href="#contato" class="footer-link">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Suporte</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="footer-link">Política de Troca</a></li>
+            <li><a href="#" class="footer-link">Envio e Entrega</a></li>
+            <li><a href="#" class="footer-link">Privacidade</a></li>
+            <li><a href="#" class="footer-link">Fale Conosco</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Redes sociais -->
+      <div>
+        <h3 class="text-white font-semibold mb-3">Siga a Marenza</h3>
+        <div class="flex space-x-4 mb-6">
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" 
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M7 7h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V9a2 2 0 012-2zm8-4h1a2 2 0 012 2v1M16 11a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" 
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" 
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+            </svg>
+          </a>
+        </div>
+
+        <p class="text-gray-500 text-sm">
+          © 2025 Marenza Joias. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+</footer>
+<script src="js/script.js" defer></script>
+</html>

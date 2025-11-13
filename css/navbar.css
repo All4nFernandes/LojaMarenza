@@ -1,0 +1,66 @@
+/* -------------------------------
+   Estilos personalizados Marenza
+--------------------------------*/
+
+/* Links da navbar */
+.nav-link {
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #111827; /* Cinza escuro */
+}
+
+/* Botão Entrar */
+.btn-login {
+  background-color: #111827;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn-login:hover {
+  background-color: #374151;
+}
+
+/* Carrinho */
+.cart-btn {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -0.4rem;
+  right: -0.4rem;
+  background: #ef4444;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 9999px;
+  padding: 0.1rem 0.3rem;
+}
+
+/* Menu mobile */
+.mobile-link {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  transition: background 0.2s;
+}
+
+.mobile-link:hover {
+  background-color: #f9fafb;
+}
+
+.mobile-login {
+  display: block;
+  text-align: center;
+  background: #111827;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  transition: background 0.2s;
+}
+
+.mobile-login:hover {
+  background: #374151;
+}

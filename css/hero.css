@@ -1,0 +1,12 @@
+#hero img {
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+#hero img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+#hero {
+  scroll-margin-top: 5rem;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos | Marenza</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-2">
+        <img src="image/Marenza.jpg" alt="Marenza" class="h-10">
+        <span class="text-2xl font-bold text-gray-800">Marenza</span>
+      </a>
+
+      <!-- Links de navegação -->
+      <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Botões -->
+      <div class="flex items-center space-x-4">
+        
+        <!-- Ícone do carrinho -->
+        <button class="relative cart-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800 hover:text-gray-600 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.35 5.4a1 1 0 001 .6h12.7a1 1 0 001-.76L21 13M9 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
+          </svg>
+        </button>
+
+        <!-- Menu mobile -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <a href="#" class="mobile-link">Início</a>
+      <a href="#produtos" class="mobile-link">Produtos</a>
+      <a href="#sobre" class="mobile-link">Sobre</a>
+      <a href="#contato" class="mobile-link">Contato</a>
+      <a href="#" class="mobile-login">Entrar</a>
+    </nav>
+  </header>
+
+  <!-- Section Produtos -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl font-bold text-gray-800 mb-10">Nossos Produtos</h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Produto 1 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="images/produto1.jpg" alt="Anel Prata" class="w-full h-64 object-cover">
+          <div class="p-5">
+            <h2 class="text-xl font-semibold text-gray-800">Anel Prata 925</h2>
+            <p class="text-gray-600 mt-2">R$ 159,90</p>
+            <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-700 transition">Ver Detalhes</button>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="images/produto2.jpg" alt="Brinco Prata" class="w-full h-64 object-cover">
+          <div class="p-5">
+            <h2 class="text-xl font-semibold text-gray-800">Brinco Coração</h2>
+            <p class="text-gray-600 mt-2">R$ 129,90</p>
+            <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-700 transition">Ver Detalhes</button>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="images/produto3.jpg" alt="Colar Prata" class="w-full h-64 object-cover">
+          <div class="p-5">
+            <h2 class="text-xl font-semibold text-gray-800">Colar Minimalista</h2>
+            <p class="text-gray-600 mt-2">R$ 199,90</p>
+            <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-700 transition">Ver Detalhes</button>
+          </div>
+        </div>
+
+        <!-- Você pode duplicar os cards acima e trocar imagem/nome/preço -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Marenza</h3>
+        <p class="text-gray-400">Joias de prata com autenticidade e brilho único.  
+        A beleza está nos detalhes.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Links</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="index.html" class="hover:text-white">Início</a></li>
+          <li><a href="produtos.html" class="hover:text-white">Produtos</a></li>
+          <li><a href="#contato" class="hover:text-white">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Contato</h3>
+        <p class="text-gray-400">contato@marenza.com.br</p>
+        <p class="text-gray-400 mt-1">(11) 99999-9999</p>
+      </div>
+    </div>
+    <div class="text-center text-gray-500 mt-8">
+      © 2025 Marenza. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

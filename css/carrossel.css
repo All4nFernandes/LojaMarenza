@@ -1,0 +1,52 @@
+#carrossel {
+  scroll-margin-top: 6rem;
+}
+
+.carousel-track {
+  display: flex;
+  width: 400%;
+}
+
+.carousel-image {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Botões */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(17, 24, 39, 0.5);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50%;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.carousel-btn:hover {
+  background: rgba(17, 24, 39, 0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.left-0 {
+  left: 10px;
+}
+
+.carousel-btn.right-0 {
+  right: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .carousel-image {
+    max-height: 300px;
+  }
+}
